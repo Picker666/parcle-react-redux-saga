@@ -1,5 +1,9 @@
+import "babel-polyfill";
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import Routers from './router';
+import store from './store';
 import styles from './index.css';
 
 class HelloWorld extends Component {
@@ -14,4 +18,11 @@ class HelloWorld extends Component {
 }
 
 const mountNode = document.getElementById("root");
-ReactDOM.render(<HelloWorld name="Picker" />, mountNode);
+ReactDOM.render(
+    <Provider store={store}>
+        <div className={styles.app}>
+            <HelloWorld name="Picker" />
+            <Routers />
+        </div>
+    </Provider>
+, mountNode);

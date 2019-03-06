@@ -1,0 +1,13 @@
+.nav {
+    margin: 12px 0 24px;
+    .navItem {
+        padding: 5px 0px;
+        text-decoration: none;
+        margin: 0 24px 0 0;
+        color: #488ff9;
+    }
+    .navActive {
+        color: #ff4d4d;
+        border-bottom: solid 2px #ff4d4d;
+    }
+}
