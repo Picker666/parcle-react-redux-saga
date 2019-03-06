@@ -1,0 +1,30 @@
+{
+  "name": "reactattempt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html -p 3000"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.4.10",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "json5": "^2.1.0",
+    "parcel-bundler": "^1.11.0",
+    "postcss-modules": "^1.4.1",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "set-value": "^3.0.0",
+    "statuses": "^1.5.0",
+    "to-fast-properties": "^2.0.0"
+  },
+  "dependencies": {
+    "color-name": "^1.1.4",
+    "json5": "^2.1.0"
+  }
+}
