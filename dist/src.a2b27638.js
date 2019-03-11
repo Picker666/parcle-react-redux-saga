@@ -44696,10 +44696,8 @@ var _reduxSaga2 = _interopRequireDefault(require("redux-saga"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var sagaMiddleware = (0, _reduxSaga2.default)();
-var initialState = {
-  num: 0
-};
-var store = (0, _redux.createStore)(_reducer.default, initialState, (0, _redux.applyMiddleware)((0, _redux.compose)(sagaMiddleware)));
+var enhancer = (0, _redux.applyMiddleware)(sagaMiddleware);
+var store = (0, _redux.createStore)(_reducer.default, enhancer);
 sagaMiddleware.run(_reduxSaga.default);
 var _default = store;
 exports.default = _default;
@@ -44811,7 +44809,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64572" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62276" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

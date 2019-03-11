@@ -4,9 +4,8 @@ import reduxSaga from '../reduxSaga';
 import createSagaMiddleware from 'redux-saga';
 
 const sagaMiddleware = createSagaMiddleware();
-
-let initialState = {num: 0};
-const store = createStore(reducer, initialState, applyMiddleware(compose(sagaMiddleware)));
+const enhancer = applyMiddleware(sagaMiddleware);
+const store = createStore(reducer, enhancer);
 sagaMiddleware.run(reduxSaga);
 
 export default store;
